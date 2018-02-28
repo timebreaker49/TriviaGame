@@ -1,0 +1,15 @@
+.answer {
+	border: 3px solid #502626;
+	padding: 10px;
+	font-size: 	14px;
+}
+
+h1 {
+	text-align: center;
+	border: 3px solid black;
+}
+
+.question {
+	text-align: left;
+	border: 2px dotted blue;	
+}
