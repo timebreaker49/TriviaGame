@@ -15,9 +15,10 @@ function answerWhenZero() {
         motivationImage.attr('src', 'assets/images/Hey-you-can-do-it.jpg');
         $('#message').append(motivationImage);
         numWrong++;
-        $('#realAnswer').append('The right answer is: ' + questionsArray[index].correctTitle);
+        $('#realAnswer').append('The right answer is: ' + questionsArray[index - 1].correctTitle);
     }
     finalScore();
+    finalScore2();
 }
 
 function countdown() {
@@ -96,6 +97,7 @@ $('#clickedAnswer').on('click', '.answer', function(event) {
     toZero();
     countdown();
     finalScore();
+    finalScore2();
 })
 
 function toZero() {
@@ -116,14 +118,24 @@ function playAgain() {
 }
 
 function finalScore() {
-    if (index === 8 && !event, index === 8 && event) {
+    if (index === 8 && !event) {
+        console.log("finalScore");
         emptyQuestion();
         $('#message').append("Number chosen correctly: " + numRight);
         $('#realAnswer').append("Number chosen incorrectly: " + numWrong);
-        setTimeout(playAgain, 3000)
+        setTimeout(playAgain, 1000 * 10)
     }
 }
 
+function finalScore2() {
+    if (index === 8 && event) {
+        console.log("finalScore2");
+        emptyQuestion();
+        $('#message').append("Number chosen correctly: " + numRight);
+        $('#realAnswer').append("Number chosen incorrectly: " + numWrong);
+        setTimeout(playAgain, 1000 * 10)
+    }
+}
 
 
 var q1 = {
