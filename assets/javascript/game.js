@@ -105,7 +105,7 @@ function toZero() {
 }
 
 function resetTimer() {
-    number = 5;
+    number = 10;
     clearInterval(intervalId);
     intervalId = setInterval(countdown, 1000);
 }
