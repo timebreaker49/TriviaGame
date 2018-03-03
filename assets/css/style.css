@@ -1,7 +1,12 @@
+.timer {
+	font-size: 
+}
+
 .answer {
 	border: 3px solid #502626;
 	padding: 10px;
 	font-size: 	14px;
+	font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -11,5 +16,17 @@ h1 {
 
 .question {
 	text-align: left;
-	border: 2px dotted blue;	
+	border: 2px dotted blue;
+	font-family: 'Lato', sans-serif;	
 }
+
+.logo {
+
+	max-width: 1400px;
+	height: 80%;
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 80%;
+}
+
